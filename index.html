@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Calculadora Standar</title>
+</head>
+<body class="calculatorFrame">
+    <h1 class="col-12">-----Calculadora Estandar-----</h1>
+    <h2 class="col-12">Ingresar dos numeros enteros para realizar los calculos.</h2>
+    <h2 class="col-12">Si desea utilizar "n!", ingresar el numero en el primer casillero.</h2>
+    <div class="container">
+        <div class="inputNumbers">
+            <label for="numero1">Primer numero:</label>
+            <input type="number" id="numero1">
+            <br><br>
+            <label for="numero2">Segundo Numero:</label>
+            <input type="number" id="numero2">
+            <br><br>
+        </div>
+        <div class="operationButtons col-12">
+            <button onclick="sumar()" class="col-6 button-color">+</button>
+            <button onclick="restar()" class="col-6 button-color">-</button>
+            <button onclick="multiplicar()" class="col-6 button-color">*</button>
+            <button onclick="dividir()" class="col-6 button-color">/</button>
+            <button onclick="potencia()" class="col-6 button-color">^</button>
+            <button onclick="factorial()" class="col-6 button-color">n!</button>
+            <button onclick="borrar()" class="col-12 erase-color">Borrar Todo</button>
+        </div>
+        <br><br>
+        <div class="resultArea">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado"> <!--Why disabled????-->
+        </div>
+
+    </div>
+    <script src="./js/scriptCalculator.js"></script>
+</body>
+</html>

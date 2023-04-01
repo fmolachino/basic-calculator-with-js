@@ -1,0 +1,23 @@
+@import 'resetCss';
+@import 'variables';
+@import 'columnSet';
+@import 'buttons';
+
+.calculatorFrame{
+    column-count: 12;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: x-large;
+}
+
+.operationButtons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    background-color: $calc-bg-color;
+}
+
+
+

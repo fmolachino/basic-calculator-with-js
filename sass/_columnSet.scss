@@ -1,0 +1,11 @@
+$grid-columns: 12; // Total number of grid columns
+
+@mixin make-columns() {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      width: (100% / $grid-columns) * $i;
+    }
+  }
+}
+
+@include make-columns();
